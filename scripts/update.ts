@@ -1,16 +1,16 @@
 import axios from 'axios'
 import dotenv from 'dotenv'
 import { writeFileSync } from 'fs'
-import { join } from 'path'
 import _ from 'lodash'
 
 dotenv.config()
 
-const SHOW_ID = '3039391',
-  dataPath = join(__dirname, '../data.json'),
-  entries = (require(dataPath).entries || []) as Entry[];
+const SHOW_ID = '3039391'
+
+let entries: Entry[]
 
 (async () => {
+  entries = (await getCurrentData() || {}).entries
   const episodeList = await getEpisodes()
 
   const infos = (await Promise.all(episodeList.map(e => getEpisodeInfo(e.episode_id))))
@@ -66,8 +66,13 @@ const SHOW_ID = '3039391',
     } else noEntries.push(title)
   }
 
-  writeFileSync('./data.json', JSON.stringify({ entries: entries.sort((a, b) => b.source.id - a.source.id) }, null, 2))
-  console.log(entries)
+  const nextDataFile: DataFile = {
+    last_update: new Date(),
+    entries: entries.sort((a, b) => b.source.id - a.source.id)
+  }
+  writeFileSync('./data.json', JSON.stringify(nextDataFile, null, 2))
+
+  console.log(`The datafile has now ${entries.length} entries.`)
   console.warn(`${noEntries.length} episodes with no entries: ${noEntries.map(s => {
     let r = s.split(':')[0]
     if (r.startsWith('ep.')) r = r.slice(3).trim()
@@ -82,6 +87,11 @@ interface Entry {
     id: number
     title: string
   }
+}
+
+interface DataFile {
+  last_update: Date
+  entries: Entry[]
 }
 
 interface SpreakerResponse<T> {
@@ -186,4 +196,10 @@ async function getEpisodes(limit = 50) {
 async function getEpisodeInfo(id: number) {
   const { episode } = await get<Episode>(`https://api.spreaker.com/v2/episodes/${id}`)
   return episode
+}
+
+async function getCurrentData(): Promise<DataFile> {
+  const res = await axios.get('https://raw.githubusercontent.com/EndBug/nikzionario/data/data.json')
+  console.log(res.data)
+  return res.data
 }
