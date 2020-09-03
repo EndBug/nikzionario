@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "commonjs",
+    "module": "esnext",
     "lib": [
       "es2015",
       "es2017",
       "es6",
       "es2015",
-      "dom"
+      "dom",
+      "DOM.Iterable",
+      "ESNext"
     ],
     "allowJs": true,
     "removeComments": true,
@@ -17,9 +19,19 @@
     "outDir": "./build/",
     "sourceRoot": "./src/",
     "sourceMap": true,
-    "jsx": "react"
+    "jsx": "react",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "exclude": [
     "build"
+  ],
+  "include": [
+    "src"
   ]
 }

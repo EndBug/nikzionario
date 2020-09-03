@@ -1,5 +1,4 @@
 import React from 'react'
-import './Header.css'
 
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -8,7 +7,7 @@ import Nav from 'react-bootstrap/Nav'
 export default function Header() {
   return (
     <header className="Header">
-      <Navbar bg="dark" expand="lg">
+      <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Brand href="/">Nikzionario™</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

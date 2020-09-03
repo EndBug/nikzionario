@@ -3,6 +3,8 @@ import dotenv from 'dotenv'
 import { writeFileSync } from 'fs'
 import _ from 'lodash'
 
+import { DataFile, Entry, getCurrentData } from '../src/utils/utils'
+
 dotenv.config()
 
 const SHOW_ID = '3039391'
@@ -79,20 +81,6 @@ let entries: Entry[]
     return r
   }).join(', ')}`)
 })()
-
-interface Entry {
-  word: string
-  def: string
-  source: {
-    id: number
-    title: string
-  }
-}
-
-interface DataFile {
-  last_update: Date
-  entries: Entry[]
-}
 
 interface SpreakerResponse<T> {
   response: T | {
@@ -196,10 +184,4 @@ async function getEpisodes(limit = 50) {
 async function getEpisodeInfo(id: number) {
   const { episode } = await get<Episode>(`https://api.spreaker.com/v2/episodes/${id}`)
   return episode
-}
-
-async function getCurrentData(): Promise<DataFile> {
-  const res = await axios.get('https://raw.githubusercontent.com/EndBug/nikzionario/data/data.json')
-  console.log(res.data)
-  return res.data
 }
