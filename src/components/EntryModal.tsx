@@ -20,9 +20,26 @@ export default function EntryModal({ entry, handleClose }: Props) {
       <Modal.Body>
         <h5>Definizione:</h5>
         {entry?.def}
+        <hr />
         <h5>Episodio:</h5>
-        <a href={entry?.source.link || ''}>{entry?.source.title}</a>
+        {entry && getSpreakerWidget(entry.source)}
       </Modal.Body>
     </Modal>
+  )
+}
+
+export function getSpreakerWidget(episode: Entry['source']) {
+  return (
+    <div>
+      <a
+        href={episode.link}
+      >
+        <iframe
+          title="Player"
+          src={`https://widget.spreaker.com/player?episode_id=${episode.id}`}
+          width="100%"
+          height="200px"></iframe>
+      </a>
+    </div>
   )
 }
