@@ -18,7 +18,7 @@ const SHOW_ID = '3039391'
 let entries: Entry[]
 
 (async () => {
-  entries = (await getCurrentData() || {}).entries
+  entries = (await getCurrentData().catch(() => { }) || {}).entries || []
   const episodeList = await getEpisodes()
 
   const infos = (await Promise.all(episodeList.map(e => getEpisodeInfo(e.episode_id))))
@@ -73,7 +73,7 @@ let entries: Entry[]
             }
           }
         if (word && def.length && entries.every(ee => !_.isEqual(ee, next)))
-          return
+          entries.push(next)
       })
     } else noEntries.push(title)
   }
