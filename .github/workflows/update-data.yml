@@ -4,9 +4,9 @@ on:
     - cron: 0 0,12 * * *
   push:
     paths:
-      - ./src/**
-      - ./scripts/**
-      - ./.github/workflows/update-data.yml
+      - src/**
+      - scripts/**
+      - .github/workflows/update-data.yml
   workflow_dispatch:
 
 jobs:
