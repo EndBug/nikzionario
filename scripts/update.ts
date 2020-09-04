@@ -15,6 +15,7 @@ const SHOW_ID = '3039391',
 let entries: Entry[]
 
 (async () => {
+  console.log(`${LAZY ? 'Running' : 'Not running'} in lazy mode.`)
   entries = (LAZY && (await getCurrentData().catch(() => { }) || {}).entries) || []
   const episodeList = await getEpisodes()
 
