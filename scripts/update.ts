@@ -5,20 +5,17 @@ import _ from 'lodash'
 
 import { DataFile, Entry, getCurrentData } from '../src/utils/utils'
 
-console.log(!!process.env.SPREAKER_API_TOKEN)
-
 dotenv.config()
-
-console.log(!!process.env.SPREAKER_API_TOKEN)
 
 if (!process.env.SPREAKER_API_TOKEN) throw new Error('Can\' find Spreaker API token.')
 
-const SHOW_ID = '3039391'
+const SHOW_ID = '3039391',
+  LAZY = process.env.LAZY === 'false' ? false : true
 
 let entries: Entry[]
 
 (async () => {
-  entries = (await getCurrentData().catch(() => { }) || {}).entries || []
+  entries = (LAZY && (await getCurrentData().catch(() => { }) || {}).entries) || []
   const episodeList = await getEpisodes()
 
   const infos = (await Promise.all(episodeList.map(e => getEpisodeInfo(e.episode_id))))
@@ -48,7 +45,7 @@ let entries: Entry[]
       const l = line.toLowerCase().trim()
       if (!start && (nikzionarioPatterns.some(p => l.includes(p)) || l.endsWith('nikzionario')))
         start = index
-      else if (!!start && !end && (l.startsWith('con: ') || l.startsWith('editato da:') || l.includes('http')))
+      else if (!!start && !end && (l.startsWith('con:') || l.startsWith('editato da:') || l.startsWith('con :') || l.startsWith('editato da :') || l.includes('http')))
         end = index
     })
 
