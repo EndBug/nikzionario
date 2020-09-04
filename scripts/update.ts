@@ -5,7 +5,13 @@ import _ from 'lodash'
 
 import { DataFile, Entry, getCurrentData } from '../src/utils/utils'
 
+console.log(!!process.env.SPREAKER_API_TOKEN)
+
 dotenv.config()
+
+console.log(!!process.env.SPREAKER_API_TOKEN)
+
+if (!process.env.SPREAKER_API_TOKEN) throw new Error('Can\' find Spreaker API token.')
 
 const SHOW_ID = '3039391'
 
