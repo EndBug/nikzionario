@@ -30,6 +30,7 @@ jobs:
         with:
           add: data.json
           cwd: './data/'
+          branch: data
           message: ':zap: build: update data file'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
