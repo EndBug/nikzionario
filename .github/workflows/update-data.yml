@@ -17,7 +17,8 @@ jobs:
         with:
           ref: data
           path: data
-      - run: |
+      - name: Generate data file
+        run: |
           npm i
           npm run update
           cp data.json data/data.json

@@ -16,10 +16,11 @@ let entries: Entry[]
   const episodeList = await getEpisodes()
 
   const infos = (await Promise.all(episodeList.map(e => getEpisodeInfo(e.episode_id))))
-    .map(e => ({
+    .map(e => (e && {
       id: e.episode_id,
       title: e.title,
-      info: e.description
+      info: e.description,
+      url: e.site_url
     }))
 
   const noEntries: string[] = []
@@ -30,11 +31,12 @@ let entries: Entry[]
   ]
 
   for (const ep of infos) {
-    const { id, title, info } = ep
+    if (!ep) continue
+    const { id, title, info, url } = ep
 
     const lines = info.split('\n')
-    let start: number,
-      end: number
+    let start: number | undefined,
+      end: number | undefined
 
     lines.forEach((line, index) => {
       const l = line.toLowerCase().trim()
@@ -52,6 +54,7 @@ let entries: Entry[]
 
       if (entryLines.length == 0)
         noEntries.push(title)
+      // eslint-disable-next-line no-loop-func
       else entryLines.forEach(e => {
         const [word, ...def] = e.split(/:|-/g),
           next = {
@@ -59,11 +62,12 @@ let entries: Entry[]
             def: def.join(':').trim(),
             source: {
               id,
-              title
+              title,
+              link: url
             }
           }
         if (word && def.length && entries.every(ee => !_.isEqual(ee, next)))
-          entries.push(next)
+          return
       })
     } else noEntries.push(title)
   }
@@ -172,6 +176,7 @@ async function getEpisodes(limit = 50) {
       limit,
       filter: 'listenable'
     }).then(res => {
+      if (!res) return
       items = [...items, ...res.items]
       if (res.next_url) return fetch(res.next_url)
     }))
@@ -182,6 +187,5 @@ async function getEpisodes(limit = 50) {
 }
 
 async function getEpisodeInfo(id: number) {
-  const { episode } = await get<Episode>(`https://api.spreaker.com/v2/episodes/${id}`)
-  return episode
+  return (await get<Episode>(`https://api.spreaker.com/v2/episodes/${id}`))?.episode
 }

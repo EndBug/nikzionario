@@ -26,12 +26,14 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "noImplicitAny": false
   },
   "exclude": [
     "build"
   ],
   "include": [
-    "src"
+    "src",
+    "scripts"
   ]
 }

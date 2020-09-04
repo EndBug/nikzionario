@@ -7,7 +7,8 @@
   },
   "root": true,
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "react-app"
   ],
   "plugins": [
     "@typescript-eslint"
