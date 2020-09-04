@@ -17,15 +17,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: data
-          path: data
+          path: ./data/
       - name: Generate data file
         run: |
           npm i
           npm run update
           cp data.json data/data.json
+          rm data.json
         env:
           SPREAKER_API_TOKEN: ${{ secrets.SPREAKER_API_TOKEN }}
-      - uses: EndBug/add-and-commit@v4
+      - uses: EndBug/add-and-commit@ts-only
         with:
           add: data.json
           cwd: './data/'
