@@ -27,6 +27,6 @@ jobs:
           SPREAKER_API_TOKEN: ${{ secrets.SPREAKER_API_TOKEN }}
       - uses: EndBug/add-and-commit@v4
         with:
-          add: data.json -f
-          cwd: ./data
+          add: data.json
+          cwd: './data/'
           message: ':zap: build: update data file'
