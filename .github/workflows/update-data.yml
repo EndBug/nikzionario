@@ -22,8 +22,7 @@ jobs:
         run: |
           npm i
           npm run update
-          cp data.json data/data.json
-          rm data.json
+          mv data.json data
         env:
           SPREAKER_API_TOKEN: ${{ secrets.SPREAKER_API_TOKEN }}
       - uses: EndBug/add-and-commit@ts-only
