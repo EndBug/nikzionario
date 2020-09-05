@@ -5,6 +5,7 @@ import Tabs from 'react-bootstrap/Tabs'
 import ListGroup from 'react-bootstrap/ListGroup'
 import ListGroupItem from 'react-bootstrap/ListGroupItem'
 
+import Header from './Header'
 import EntryModal from './EntryModal'
 import EpisodeModal from './EpisodeModal'
 import EntrySearch from './EntrySearch'
@@ -18,15 +19,20 @@ export default function App() {
     [tab, setTab] = useState<string | null>('entries')
 
   useEffect(() => {
-    getCurrentData().then(setData)
+    getCurrentData().then(d => setData({
+      entries: d.entries,
+      last_update: new Date(d.last_update)
+    }))
   }, [data])
 
   return (
     <div>
+      <Header data={data} />
       {
         data
           ? (
             <div>
+
               <Tabs
                 id="main tab menu"
                 activeKey={tab}

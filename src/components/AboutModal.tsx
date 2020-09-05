@@ -1,16 +1,19 @@
 import React from 'react'
 import Modal from 'react-bootstrap/Modal'
+import { DataFile } from '../utils/utils'
 
 interface Props {
   show: boolean
   handleClose: () => void
+  data: DataFile | undefined
 }
 
-export default function AboutModal({ show, handleClose }: Props) {
+export default function AboutModal({ show, handleClose, data }: Props) {
   return (
     <Modal show={show} onHide={handleClose} size="xl">
       <Modal.Header closeButton>About</Modal.Header>
       <Modal.Body style={{ textJustify: 'auto' }}>
+        <p><i>L'unico sito dove potete sensibilmente arricchire il vostro vocabolario sfruttando le perle lessicali di <a href="https://www.spreaker.com/show/power-pizza">Power Pizza</a>.</i></p>
         <h5>Come funziona:</h5>
         <p>Il sito si aggiorna automaticamente leggendo le descrizioni delle puntate del podcast e trovando le definizioni. Questo processo è quindi automatico e lontano dall'essere perfetto: se dovessero mancare delle definizioni, contattate l'autore del sito.</p>
         <h5>Formati riconosciuti:</h5>
@@ -34,6 +37,12 @@ export default function AboutModal({ show, handleClose }: Props) {
           <li><a href="https://github.com/EndBug/nikzionario">Progetto del sito</a></li>
           <li><a href="https://github.com/EndBug">Profilo dell'autore</a></li>
         </ul>
+        <p><small>
+          Stats:<br />
+          Last database update: {data?.last_update ? data.last_update.toDateString() + ' @ ' + data.last_update.toTimeString() : 'unknown'}<br />
+          Entries: {data?.entries.length || 'unknown'}
+        </small></p>
+
       </Modal.Body>
     </Modal >
   )

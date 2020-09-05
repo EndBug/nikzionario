@@ -3,8 +3,13 @@ import React, { useState } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import AboutModal from './AboutModal'
+import { DataFile } from '../utils/utils'
 
-export default function Header() {
+interface Props {
+  data: DataFile | undefined
+}
+
+export default function Header({ data }: Props) {
   const [aboutVisible, showAbout] = useState(false)
 
   return (
@@ -21,7 +26,7 @@ export default function Header() {
         </Navbar>
 
       </header>
-      <AboutModal show={aboutVisible} handleClose={() => { showAbout(false) }} />
+      <AboutModal show={aboutVisible} handleClose={() => { showAbout(false) }} data={data} />
     </div>
   )
 }
