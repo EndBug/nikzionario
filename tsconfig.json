@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "CommonJS",
+    "module": "esnext",
     "lib": [
       "es2015",
       "es2017",
@@ -33,7 +33,6 @@
     "build"
   ],
   "include": [
-    "src",
-    "scripts"
+    "src"
   ]
 }

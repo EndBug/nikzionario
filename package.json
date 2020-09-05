@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.8",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "lodash": "^4.17.20",
     "react": "^16.13.1",
@@ -26,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "update": "ts-node scripts/update.ts"
+    "update": "cross-env TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node scripts/update.ts"
   },
   "browserslist": {
     "production": [
