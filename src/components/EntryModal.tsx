@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import { Entry } from '../utils/utils'
 
@@ -8,6 +8,12 @@ interface Props {
 }
 
 export default function EntryModal({ entry, handleClose }: Props) {
+  const [cached, cacheEntry] = useState<Entry | undefined>()
+
+  useEffect(() => {
+    if (entry) cacheEntry(entry)
+  }, [entry])
+
   return (
     <Modal
       show={!!entry}
@@ -19,10 +25,10 @@ export default function EntryModal({ entry, handleClose }: Props) {
       </Modal.Header>
       <Modal.Body>
         <h5>Definizione:</h5>
-        {entry?.def}
+        {cached?.def}
         <hr />
         <h5>Episodio:</h5>
-        {entry && getSpreakerWidget(entry.source)}
+        {cached && getSpreakerWidget(cached.source)}
       </Modal.Body>
     </Modal>
   )
