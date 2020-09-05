@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import { writeFileSync } from 'fs'
 import _ from 'lodash'
 
-import { DataFile, Entry, getCurrentData } from '../src/utils/utils'
+import { DataFile, Entry, getCurrentData, getRealEpisodeURL } from '../src/utils/utils'
 
 dotenv.config()
 
@@ -23,8 +23,7 @@ let entries: Entry[]
     .map(e => (e && {
       id: e.episode_id,
       title: e.title,
-      info: e.description,
-      url: e.site_url
+      info: e.description
     }))
 
   const noEntries: string[] = []
@@ -36,7 +35,7 @@ let entries: Entry[]
 
   for (const ep of infos) {
     if (!ep) continue
-    const { id, title, info, url } = ep
+    const { id, title, info } = ep
 
     const lines = info.split('\n')
     let start: number | undefined,
@@ -59,7 +58,7 @@ let entries: Entry[]
       if (entryLines.length == 0)
         noEntries.push(title)
       // eslint-disable-next-line no-loop-func
-      else entryLines.forEach(e => {
+      else entryLines.forEach(async e => {
         const [word, ...def] = e.split(/:|-/g),
           next = {
             word: word.trim(),
@@ -67,7 +66,7 @@ let entries: Entry[]
             source: {
               id,
               title,
-              link: url
+              link: await getRealEpisodeURL(id)
             }
           }
         if (word && def.length && entries.every(ee => !_.isEqual(ee, next)))
