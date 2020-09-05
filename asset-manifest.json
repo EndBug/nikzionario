@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nikzionario/static/css/main.d498bfb3.chunk.css",
-    "main.js": "/nikzionario/static/js/main.9097e31c.chunk.js",
-    "main.js.map": "/nikzionario/static/js/main.9097e31c.chunk.js.map",
+    "main.js": "/nikzionario/static/js/main.1c36a67a.chunk.js",
+    "main.js.map": "/nikzionario/static/js/main.1c36a67a.chunk.js.map",
     "runtime-main.js": "/nikzionario/static/js/runtime-main.2ffbb07d.js",
     "runtime-main.js.map": "/nikzionario/static/js/runtime-main.2ffbb07d.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/nikzionario/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.1dab9cf3.chunk.js": "/nikzionario/static/js/2.1dab9cf3.chunk.js",
     "static/js/2.1dab9cf3.chunk.js.map": "/nikzionario/static/js/2.1dab9cf3.chunk.js.map",
     "index.html": "/nikzionario/index.html",
-    "precache-manifest.6d54f90659c322f0f36e45cf0ea1de04.js": "/nikzionario/precache-manifest.6d54f90659c322f0f36e45cf0ea1de04.js",
+    "precache-manifest.12f751df6c778dabf089ff8235546152.js": "/nikzionario/precache-manifest.12f751df6c778dabf089ff8235546152.js",
     "service-worker.js": "/nikzionario/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/nikzionario/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.d498bfb3.chunk.css.map": "/nikzionario/static/css/main.d498bfb3.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.1dab9cf3.chunk.js",
     "static/css/main.d498bfb3.chunk.css",
-    "static/js/main.9097e31c.chunk.js"
+    "static/js/main.1c36a67a.chunk.js"
   ]
 }
