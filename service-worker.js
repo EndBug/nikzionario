@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nikzionario/precache-manifest.8448a27465031dd570f572e855ec5b21.js"
+  "/nikzionario/precache-manifest.5df89973cd2f09cadcd1406eb993dee6.js"
 );
 
 self.addEventListener('message', (event) => {
