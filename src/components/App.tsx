@@ -7,6 +7,7 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem'
 
 import EntryModal from './EntryModal'
 import EpisodeModal from './EpisodeModal'
+import EntrySearch from './EntrySearch'
 
 import { DataFile, getCurrentData, Entry } from '../utils/utils'
 
@@ -77,8 +78,16 @@ export default function App() {
                   eventKey="search"
                   title="Ricerca"
                 >
-                  asd
-              </Tab>
+                  <EntrySearch entries={data.entries} displayEntry={displayEntry} />
+                  <EntryModal
+                    entry={displayedEntry}
+                    handleClose={() => { displayEntry(undefined) }}
+                    episodeLink={id => {
+                      displayEntry(undefined)
+                      displayEpisode(id)
+                    }}
+                  />
+                </Tab>
               </Tabs>
             </div>
           )
