@@ -29,6 +29,7 @@ let entries: Entry[]
   const noEntries: string[] = []
   const nikzionarioPatterns = [
     '🍕nikzionario',
+    '🍕 nikzionario',
     '+nikzionario',
     '+ nikzionario'
   ]
