@@ -58,7 +58,7 @@ let entries: Entry[]
       if (entryLines.length == 0)
         noEntries.push(title)
       // eslint-disable-next-line no-loop-func
-      else entryLines.forEach(async e => {
+      else await Promise.allSettled(entryLines.map(async e => {
         const [word, ...def] = e.split(/:|-/g),
           next = {
             word: word.trim(),
@@ -71,7 +71,7 @@ let entries: Entry[]
           }
         if (word && def.length && entries.every(ee => !_.isEqual(ee, next)))
           entries.push(next)
-      })
+      }))
     } else noEntries.push(title)
   }
 
