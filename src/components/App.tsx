@@ -46,7 +46,14 @@ export default function App() {
                       </ListGroupItem>
                     ))}
                   </ListGroup>
-                  <EntryModal entry={displayedEntry} handleClose={() => { displayEntry(undefined) }} />
+                  <EntryModal
+                    entry={displayedEntry}
+                    handleClose={() => { displayEntry(undefined) }}
+                    episodeLink={id => {
+                      displayEntry(undefined)
+                      displayEpisode(id)
+                    }}
+                  />
                 </Tab>
                 <Tab
                   eventKey="episodes"
