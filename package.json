@@ -1,6 +1,7 @@
 {
   "name": "nikzionario",
   "version": "0.1.0",
+  "homepage": "https://endbug.github.io/nikzionario",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -16,6 +17,7 @@
     "bootstrap": "^4.5.2",
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
+    "gh-pages": "^3.1.0",
     "lodash": "^4.17.20",
     "match-sorter": "^4.2.0",
     "react": "^16.13.1",
@@ -31,7 +33,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "update": "cross-env TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node scripts/update.ts"
+    "update": "cross-env TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node scripts/update.ts",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
