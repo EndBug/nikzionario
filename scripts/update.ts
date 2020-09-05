@@ -59,7 +59,7 @@ let entries: Entry[]
         noEntries.push(title)
       // eslint-disable-next-line no-loop-func
       else await Promise.allSettled(entryLines.map(async e => {
-        const [word, ...def] = e.split(/:|-/g),
+        const [word, ...def] = e.split(/:/g) || e.split(/-/g),
           next = {
             word: word.trim(),
             def: def.join(':').trim(),
