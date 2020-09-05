@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Modal from 'react-bootstrap/Modal'
-import { Entry } from '../utils/utils'
+import { Entry, SpreakerWidget } from '../utils/utils'
 
 interface Props {
   entry: Entry | undefined
@@ -28,24 +28,8 @@ export default function EntryModal({ entry, handleClose }: Props) {
         {cached?.def}
         <hr />
         <h5>Episodio:</h5>
-        {cached && getSpreakerWidget(cached.source)}
+        {cached && <SpreakerWidget episode={cached.source} />}
       </Modal.Body>
     </Modal>
-  )
-}
-
-export function getSpreakerWidget(episode: Entry['source']) {
-  return (
-    <div>
-      <a
-        href={episode.link}
-      >
-        <iframe
-          title="Player"
-          src={`https://widget.spreaker.com/player?episode_id=${episode.id}`}
-          width="100%"
-          height="200px"></iframe>
-      </a>
-    </div>
   )
 }

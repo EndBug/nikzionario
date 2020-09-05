@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import parseHTML, { convertNodeToElement, Transform } from 'react-html-parser'
 
 export interface Entry {
   word: string
@@ -27,14 +28,22 @@ export async function getRealEpisodeURL(id: number) {
 }
 
 export function SpreakerWidget({ episode }: { episode: Entry['source'] }) {
-  const [embed, loadEmbed] = useState<JSX.Element>()
+  const [embed, loadEmbed] = useState<any>()
+
+  const transform: Transform = (node, index) => {
+    if (node.name == 'iframe' && node.attribs) {
+      node.attribs.width = '100%'
+      node.attribs.height = '100%'
+    }
+    return convertNodeToElement(node, index, transform)
+  }
 
   useEffect(() => {
     if (!embed) axios.get(`https://api.spreaker.com/oembed?url=${episode.link}`)
       .then(({ data }) => {
         console.log(data.html)
         if (typeof data == 'object' && data.html) {
-          loadEmbed(<div dangerouslySetInnerHTML={{ __html: data.html }} />)
+          loadEmbed(parseHTML(data.html, { transform }))
         }
       })
       .catch(console.error)

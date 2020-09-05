@@ -6,6 +6,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import ListGroupItem from 'react-bootstrap/ListGroupItem'
 
 import EntryModal from './EntryModal'
+import EpisodeModal from './EpisodeModal'
 
 import { DataFile, getCurrentData, Entry } from '../utils/utils'
 
@@ -63,6 +64,7 @@ export default function App() {
                         ))
                     }
                   </ListGroup>
+                  <EpisodeModal id={displayedEpisode} entries={data.entries} handleClose={() => { displayEpisode(undefined) }} />
                 </Tab>
                 <Tab
                   eventKey="search"
