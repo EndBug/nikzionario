@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Modal from 'react-bootstrap/Modal'
+import ListGroup from 'react-bootstrap/esm/ListGroup'
+import ListGroupItem from 'react-bootstrap/esm/ListGroupItem'
+
 import { Entry, SpreakerWidget } from '../utils/utils'
 
 interface Props {
@@ -30,7 +33,18 @@ export default function EpisodeModal({ id, entries, handleClose }: Props) {
       </Modal.Header>
       <Modal.Body>
         <h5>Episodio:</h5>
-        {episode.source && <SpreakerWidget episode={episode.source} />}
+        <div>
+          {episode.source && <SpreakerWidget episode={episode.source} />}
+        </div>
+        <hr />
+        <h5>Definizioni:</h5>
+        <ListGroup>
+          {episode.entries.map((entry, index) => (
+            <ListGroupItem key={index} style={{ color: '#495057' }}>
+              <b>{entry.word}</b>: {entry.def}
+            </ListGroupItem>
+          ))}
+        </ListGroup>
       </Modal.Body>
     </Modal>
   )
