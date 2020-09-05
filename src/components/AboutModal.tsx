@@ -17,6 +17,7 @@ export default function AboutModal({ show, handleClose }: Props) {
         <p>Al fine di rendere più facile l'aggiornamento del sito, sarebbe meglio che il formato del nikzionario all'interno delle note degli episodi rimanesse costante. Lo script che aggiorna le definizioni ragiona così:</p>
         <ul>
           <li>
+            {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
             <p>Il Nikzionario è preceduto da una linea che comprende <code>+nikzionario</code> o <code>🍕nikzionario</code> (caps insentive, validi anche con uno spazio tra simbolo e parola), oppure che finisce con <code>nikzionario</code>. Se non viene trovata una linea con queste caratteristiche, la puntata non ha un Nikzionario.</p>
           </li>
           <li>
