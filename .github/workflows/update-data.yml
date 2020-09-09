@@ -38,5 +38,7 @@ jobs:
           cwd: './data/'
           branch: data
           message: ':zap: build: update data file'
+          author_name: GitHub Actions
+          author_email: actions@github.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
