@@ -1,14 +1,12 @@
 import React from 'react'
 import Modal from 'react-bootstrap/Modal'
-import { DataFile } from '../utils/utils'
 
 interface Props {
   show: boolean
   handleClose: () => void
-  data: DataFile | undefined
 }
 
-export default function AboutModal({ show, handleClose, data }: Props) {
+export default function AboutModal({ show, handleClose }: Props) {
   return (
     <Modal show={show} onHide={handleClose} size="xl">
       <Modal.Header closeButton>About</Modal.Header>
@@ -37,11 +35,6 @@ export default function AboutModal({ show, handleClose, data }: Props) {
           <li><a href="https://github.com/EndBug/nikzionario">Progetto del sito</a></li>
           <li><a href="https://github.com/EndBug">Profilo dell'autore</a></li>
         </ul>
-        <p><small>
-          Stats:<br />
-          Last database update: {data?.last_update ? data.last_update.toDateString() + ' @ ' + data.last_update.toTimeString() : 'unknown'}<br />
-          Entries: {data?.entries.length || 'unknown'}
-        </small></p>
 
       </Modal.Body>
     </Modal >
