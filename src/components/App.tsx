@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <div>
-      <Header data={data} />
+      <Header />
       {
         data
           ? (
