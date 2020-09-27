@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0e219f65e322880031787abef014a10",
+    "revision": "7ef11dd8d09aae7dfd2673057c307470",
     "url": "/nikzionario/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikzionario/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "ae5e6fade2d11434ecf2",
+    "revision": "250d0c5ecbea000c2a30",
     "url": "/nikzionario/static/css/main.d498bfb3.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikzionario/static/js/2.1dab9cf3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae5e6fade2d11434ecf2",
-    "url": "/nikzionario/static/js/main.1c36a67a.chunk.js"
+    "revision": "250d0c5ecbea000c2a30",
+    "url": "/nikzionario/static/js/main.9553f9e6.chunk.js"
   },
   {
     "revision": "4ba3f9ab72f895fe94cc",
