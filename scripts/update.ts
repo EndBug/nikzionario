@@ -16,7 +16,8 @@ let entries: Entry[]
 
 (async () => {
   console.log(`${LAZY ? 'Running' : 'Not running'} in lazy mode.`)
-  entries = (LAZY && (await getCurrentData().catch(() => { }) || {}).entries) || []
+  const currentData = await getCurrentData().catch(() => { })
+  entries = (LAZY && (currentData || {}).entries) || []
   const episodeList = await getEpisodes()
 
   const infos = (await Promise.all(episodeList.map(e => getEpisodeInfo(e.episode_id))))
@@ -83,14 +84,19 @@ let entries: Entry[]
     last_update: new Date(),
     entries: entries.sort((a, b) => b.source.id - a.source.id)
   }
-  writeFileSync('./data.json', JSON.stringify(nextDataFile, null, 2))
 
-  console.log(`The datafile has now ${entries.length} entries.`)
-  console.warn(`${noEntries.length} episodes with no entries: ${noEntries.map(s => {
-    let r = s.split(':')[0]
-    if (r.startsWith('ep.')) r = r.slice(3).trim()
-    return r
-  }).join(', ')}`)
+  if (!currentData || JSON.stringify(currentData.entries) != JSON.stringify(nextDataFile.entries)) {
+    console.log(`The datafile now has ${entries.length} entries.`)
+    console.warn(`${noEntries.length} episodes with no entries: ${noEntries.map(s => {
+      let r = s.split(':')[0]
+      if (r.startsWith('ep.')) r = r.slice(3).trim()
+      return r
+    }).join(', ')}`)
+
+    writeFileSync('./data.json', JSON.stringify(nextDataFile, null, 2))
+  } else {
+    console.log('There are no new entries.')
+  }
 })()
 
 interface SpreakerResponse<T> {
