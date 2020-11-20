@@ -31,7 +31,7 @@ jobs:
           cd data
         env:
           SPREAKER_API_TOKEN: ${{ secrets.SPREAKER_API_TOKEN }}
-          LAZY: ${{ github.event.inputs.lazy || 'true' }}
+          LAZY: ${{ github.event.inputs.lazy || 'false' }}
       - uses: EndBug/add-and-commit@v5
         with:
           add: data.json
