@@ -1,9 +1,9 @@
 {
-  "last_update": "2022-06-05T02:09:43.079Z",
+  "last_update": "2022-06-05T12:39:14.960Z",
   "entries": [
     {
-      "word": "Enickma",
-      "def": "tipo un enigma, ma è tale solo per Nick :VVV",
+      "word": "Chesto",
+      "def": "“petto” se avete vissuto a Melbourne",
       "source": {
         "id": 49939121,
         "title": "192: Bullet nel Chesto",
@@ -11,8 +11,8 @@
       }
     },
     {
-      "word": "Chesto",
-      "def": "“petto” se avete vissuto a Melbourne",
+      "word": "Enickma",
+      "def": "tipo un enigma, ma è tale solo per Nick :VVV",
       "source": {
         "id": 49939121,
         "title": "192: Bullet nel Chesto",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "word": "Staple",
-      "def": "graffette 👀",
+      "word": "Ironare",
+      "def": "appianare (da “to iron out”)",
       "source": {
         "id": 49508646,
         "title": "187: Cento Pollici",
@@ -47,8 +47,8 @@
       }
     },
     {
-      "word": "Ironare",
-      "def": "appianare (da “to iron out”)",
+      "word": "Staple",
+      "def": "graffette 👀",
       "source": {
         "id": 49508646,
         "title": "187: Cento Pollici",
@@ -92,15 +92,6 @@
       }
     },
     {
-      "word": "Sucker",
-      "def": "no, non la torta sacher -_-",
-      "source": {
-        "id": 49016468,
-        "title": "182: Evil Bull",
-        "link": "https://www.spreaker.com/user/10653829/182-evil-bull"
-      }
-    },
-    {
       "word": "“Wababa”",
       "def": "rumore che bisogna emettere quando tornate in puntata",
       "source": {
@@ -110,8 +101,17 @@
       }
     },
     {
-      "word": "Jihad",
-      "def": "screzi tra tizi delle granite e quelli dei gelati",
+      "word": "Sucker",
+      "def": "no, non la torta sacher -_-",
+      "source": {
+        "id": 49016468,
+        "title": "182: Evil Bull",
+        "link": "https://www.spreaker.com/user/10653829/182-evil-bull"
+      }
+    },
+    {
+      "word": "Qualità negative",
+      "def": "difetti :V",
       "source": {
         "id": 48844401,
         "title": "180: Cucchiaino di Manzo",
@@ -119,8 +119,8 @@
       }
     },
     {
-      "word": "Qualità negative",
-      "def": "difetti :V",
+      "word": "Jihad",
+      "def": "screzi tra tizi delle granite e quelli dei gelati",
       "source": {
         "id": 48844401,
         "title": "180: Cucchiaino di Manzo",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "word": "Redimmare",
-      "def": "redimere",
+      "word": "Grippo",
+      "def": "lamentela (da “gripe”)",
       "source": {
         "id": 48280138,
         "title": "174: Topinambur Vegani",
@@ -173,8 +173,8 @@
       }
     },
     {
-      "word": "Grippo",
-      "def": "lamentela (da “gripe”)",
+      "word": "Redimmare",
+      "def": "redimere",
       "source": {
         "id": 48280138,
         "title": "174: Topinambur Vegani",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "word": "Tonedownare",
-      "def": "smorzare, attenuare (da “tone down”)",
+      "word": "Driftano",
+      "def": "vagabondano, girovagano (esiste un termine italiano a quanto pare :V )",
       "source": {
         "id": 45343712,
         "title": "146: l'Uomuomo™",
@@ -308,8 +308,8 @@
       }
     },
     {
-      "word": "Driftano",
-      "def": "vagabondano, girovagano (esiste un termine italiano a quanto pare :V )",
+      "word": "Tonedownare",
+      "def": "smorzare, attenuare (da “tone down”)",
       "source": {
         "id": 45343712,
         "title": "146: l'Uomuomo™",
@@ -344,8 +344,8 @@
       }
     },
     {
-      "word": "Sgarzolo",
-      "def": "fico, alla moda, che piace ai giovani",
+      "word": "Assuefino",
+      "def": "è giusto? non lo è? noi di certo non ne abbiamo idea :v",
       "source": {
         "id": 44435570,
         "title": "139: PPP Double Feature",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "word": "Assuefino",
-      "def": "è giusto? non lo è? noi di certo non ne abbiamo idea :v",
+      "word": "Sgarzolo",
+      "def": "fico, alla moda, che piace ai giovani",
       "source": {
         "id": 44435570,
         "title": "139: PPP Double Feature",
@@ -389,8 +389,8 @@
       }
     },
     {
-      "word": "Flesh-outare",
-      "def": "“sviluppare” (to flesh out)",
+      "word": "Fitti",
+      "def": "fatti, ma fittizi",
       "source": {
         "id": 44049734,
         "title": "135: Il Comic Sans è Bidoof",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "word": "Fitti",
-      "def": "fatti, ma fittizi",
+      "word": "Flesh-outare",
+      "def": "“sviluppare” (to flesh out)",
       "source": {
         "id": 44049734,
         "title": "135: Il Comic Sans è Bidoof",
@@ -596,15 +596,6 @@
       }
     },
     {
-      "word": "Enpàssant",
-      "def": "Di sfuggita, accidentalmente",
-      "source": {
-        "id": 40532045,
-        "title": "106: Il Ritorno del Moderatore",
-        "link": "https://www.spreaker.com/user/10653829/106-il-ritorno-del-moderatore"
-      }
-    },
-    {
       "word": "Greidato",
       "def": "Graded (da color grading)",
       "source": {
@@ -614,17 +605,17 @@
       }
     },
     {
-      "word": "Ledges delle piattaforme",
-      "def": "I bordi delle piattaforme",
+      "word": "Enpàssant",
+      "def": "Di sfuggita, accidentalmente",
       "source": {
-        "id": 40405763,
-        "title": "105: Star Star",
-        "link": "https://www.spreaker.com/user/10653829/105-star-star"
+        "id": 40532045,
+        "title": "106: Il Ritorno del Moderatore",
+        "link": "https://www.spreaker.com/user/10653829/106-il-ritorno-del-moderatore"
       }
     },
     {
-      "word": "Gullibile",
-      "def": "Credulone",
+      "word": "Spinzettarsi",
+      "def": "Farsi i peli con estrema foga/trasporto",
       "source": {
         "id": 40405763,
         "title": "105: Star Star",
@@ -641,8 +632,17 @@
       }
     },
     {
-      "word": "Spinzettarsi",
-      "def": "Farsi i peli con estrema foga/trasporto",
+      "word": "Gullibile",
+      "def": "Credulone",
+      "source": {
+        "id": 40405763,
+        "title": "105: Star Star",
+        "link": "https://www.spreaker.com/user/10653829/105-star-star"
+      }
+    },
+    {
+      "word": "Ledges delle piattaforme",
+      "def": "I bordi delle piattaforme",
       "source": {
         "id": 40405763,
         "title": "105: Star Star",
@@ -668,8 +668,8 @@
       }
     },
     {
-      "word": "Zebedei",
-      "def": "Testicoli",
+      "word": "Lettore di vinili",
+      "def": "Giradischi",
       "source": {
         "id": 40187033,
         "title": "103: Conditio Sine Qui Quo Qua Non",
@@ -686,8 +686,8 @@
       }
     },
     {
-      "word": "Lettore di vinili",
-      "def": "Giradischi",
+      "word": "Zebedei",
+      "def": "Testicoli",
       "source": {
         "id": 40187033,
         "title": "103: Conditio Sine Qui Quo Qua Non",
@@ -695,8 +695,8 @@
       }
     },
     {
-      "word": "Gigglare",
-      "def": "to giggle",
+      "word": "Iperlativo",
+      "def": "super superlativo",
       "source": {
         "id": 40051942,
         "title": "102: What He Does in the Mirror",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "word": "Iperlativo",
-      "def": "super superlativo",
+      "word": "Gigglare",
+      "def": "to giggle",
       "source": {
         "id": 40051942,
         "title": "102: What He Does in the Mirror",
@@ -740,8 +740,17 @@
       }
     },
     {
-      "word": "Timely",
-      "def": "temposo➡️➡️➡️▪️▪️▪️▪️😱👈🎶🎶🎶👇😱",
+      "word": "Ignifugicità",
+      "def": "Essere ignifugico🔥🧯🔥🔥🔥🔥🧯🧯😱",
+      "source": {
+        "id": 39793410,
+        "title": "100: Cento Fette di Pizza",
+        "link": "https://www.spreaker.com/user/10653829/100-cento-fette-di-pizza"
+      }
+    },
+    {
+      "word": "Arrakis",
+      "def": "formula magica segreta che fa ridere Nik😅😅😅😅😅😭😞💪😄🦾🐡💥",
       "source": {
         "id": 39793410,
         "title": "100: Cento Fette di Pizza",
@@ -758,17 +767,8 @@
       }
     },
     {
-      "word": "Ignifugicità",
-      "def": "Essere ignifugico🔥🧯🔥🔥🔥🔥🧯🧯😱",
-      "source": {
-        "id": 39793410,
-        "title": "100: Cento Fette di Pizza",
-        "link": "https://www.spreaker.com/user/10653829/100-cento-fette-di-pizza"
-      }
-    },
-    {
-      "word": "Arrakis",
-      "def": "formula magica segreta che fa ridere Nik😅😅😅😅😅😭😞💪😄🦾🐡💥",
+      "word": "Timely",
+      "def": "temposo➡️➡️➡️▪️▪️▪️▪️😱👈🎶🎶🎶👇😱",
       "source": {
         "id": 39793410,
         "title": "100: Cento Fette di Pizza",
@@ -803,8 +803,8 @@
       }
     },
     {
-      "word": "Overvendere",
-      "def": "NO DAVVERO BELLISSIMO NON AVETE IDEA",
+      "word": "Mediolina",
+      "def": "Non ottimina, non bassina. Mediolina.",
       "source": {
         "id": 29272877,
         "title": "ep.94: Non Fidatevi di Noi",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "word": "Mediolina",
-      "def": "Non ottimina, non bassina. Mediolina.",
+      "word": "Overvendere",
+      "def": "NO DAVVERO BELLISSIMO NON AVETE IDEA",
       "source": {
         "id": 29272877,
         "title": "ep.94: Non Fidatevi di Noi",
@@ -857,17 +857,8 @@
       }
     },
     {
-      "word": "Puntare l’attenzione",
-      "def": "Portare alla vostra attenzione",
-      "source": {
-        "id": 26417549,
-        "title": "ep.89: Turbo, Metallo & Brugola",
-        "link": "https://www.spreaker.com/user/10653829/20-04-21-pizza-89"
-      }
-    },
-    {
-      "word": "Piuttosto che",
-      "def": "Oppure (non usatelo così per piacere)",
+      "word": "Diramare",
+      "def": "????????????",
       "source": {
         "id": 26417549,
         "title": "ep.89: Turbo, Metallo & Brugola",
@@ -884,8 +875,17 @@
       }
     },
     {
-      "word": "Diramare",
-      "def": "????????????",
+      "word": "Piuttosto che",
+      "def": "Oppure (non usatelo così per piacere)",
+      "source": {
+        "id": 26417549,
+        "title": "ep.89: Turbo, Metallo & Brugola",
+        "link": "https://www.spreaker.com/user/10653829/20-04-21-pizza-89"
+      }
+    },
+    {
+      "word": "Puntare l’attenzione",
+      "def": "Portare alla vostra attenzione",
       "source": {
         "id": 26417549,
         "title": "ep.89: Turbo, Metallo & Brugola",
@@ -911,15 +911,6 @@
       }
     },
     {
-      "word": "Postclaimer",
-      "def": "Disclaimer, ma dopo, quindi non serve a niente",
-      "source": {
-        "id": 25139201,
-        "title": "ep.86: Bacon as Anything",
-        "link": "https://www.spreaker.com/user/10653829/ep-86-bacon-as-anything"
-      }
-    },
-    {
       "word": "Viabile",
       "def": "Praticabile, attuabile, (da Viable)",
       "source": {
@@ -929,12 +920,12 @@
       }
     },
     {
-      "word": "Enforzare",
-      "def": "Far rispettare",
+      "word": "Postclaimer",
+      "def": "Disclaimer, ma dopo, quindi non serve a niente",
       "source": {
-        "id": 24746114,
-        "title": "ep.85: Pizza con la Frutta",
-        "link": "https://www.spreaker.com/user/10653829/ep-85-pizza-con-la-frutta"
+        "id": 25139201,
+        "title": "ep.86: Bacon as Anything",
+        "link": "https://www.spreaker.com/user/10653829/ep-86-bacon-as-anything"
       }
     },
     {
@@ -947,26 +938,17 @@
       }
     },
     {
-      "word": "Angolodown",
-      "def": "Topdown, ma un po’ sfasato",
+      "word": "Enforzare",
+      "def": "Far rispettare",
       "source": {
-        "id": 24056091,
-        "title": "ep.83: Attendere Vigorosamente VII",
-        "link": "https://www.spreaker.com/user/10653829/ep-83-attendere-vigorosamente-vii"
+        "id": 24746114,
+        "title": "ep.85: Pizza con la Frutta",
+        "link": "https://www.spreaker.com/user/10653829/ep-85-pizza-con-la-frutta"
       }
     },
     {
-      "word": "ENGIAIN",
-      "def": "Engine, “motore grafico”",
-      "source": {
-        "id": 24056091,
-        "title": "ep.83: Attendere Vigorosamente VII",
-        "link": "https://www.spreaker.com/user/10653829/ep-83-attendere-vigorosamente-vii"
-      }
-    },
-    {
-      "word": "Lorro",
-      "def": "Non Nik",
+      "word": "Corroborare",
+      "def": "Wow Nik ha usato questa parola correttamente",
       "source": {
         "id": 24056091,
         "title": "ep.83: Attendere Vigorosamente VII",
@@ -983,8 +965,8 @@
       }
     },
     {
-      "word": "Corroborare",
-      "def": "Wow Nik ha usato questa parola correttamente",
+      "word": "Lorro",
+      "def": "Non Nik",
       "source": {
         "id": 24056091,
         "title": "ep.83: Attendere Vigorosamente VII",
@@ -992,8 +974,44 @@
       }
     },
     {
-      "word": "Blu",
-      "def": "Colore della velocità",
+      "word": "ENGIAIN",
+      "def": "Engine, “motore grafico”",
+      "source": {
+        "id": 24056091,
+        "title": "ep.83: Attendere Vigorosamente VII",
+        "link": "https://www.spreaker.com/user/10653829/ep-83-attendere-vigorosamente-vii"
+      }
+    },
+    {
+      "word": "Angolodown",
+      "def": "Topdown, ma un po’ sfasato",
+      "source": {
+        "id": 24056091,
+        "title": "ep.83: Attendere Vigorosamente VII",
+        "link": "https://www.spreaker.com/user/10653829/ep-83-attendere-vigorosamente-vii"
+      }
+    },
+    {
+      "word": "Saccate",
+      "def": "grandi quantità",
+      "source": {
+        "id": 23793376,
+        "title": "ep.82: Gommoso e Stantio",
+        "link": "https://www.spreaker.com/user/10653829/ep-82-gommoso-e-stantio"
+      }
+    },
+    {
+      "word": "Rooster",
+      "def": "Roster",
+      "source": {
+        "id": 23793376,
+        "title": "ep.82: Gommoso e Stantio",
+        "link": "https://www.spreaker.com/user/10653829/ep-82-gommoso-e-stantio"
+      }
+    },
+    {
+      "word": "Triggerare",
+      "def": "Lavorare per lo studio Trigger",
       "source": {
         "id": 23793376,
         "title": "ep.82: Gommoso e Stantio",
@@ -1019,8 +1037,8 @@
       }
     },
     {
-      "word": "Saccate",
-      "def": "grandi quantità",
+      "word": "Antitaschi",
+      "def": "????",
       "source": {
         "id": 23793376,
         "title": "ep.82: Gommoso e Stantio",
@@ -1028,17 +1046,8 @@
       }
     },
     {
-      "word": "Triggerare",
-      "def": "Lavorare per lo studio Trigger",
-      "source": {
-        "id": 23793376,
-        "title": "ep.82: Gommoso e Stantio",
-        "link": "https://www.spreaker.com/user/10653829/ep-82-gommoso-e-stantio"
-      }
-    },
-    {
-      "word": "Rooster",
-      "def": "Roster",
+      "word": "Blu",
+      "def": "Colore della velocità",
       "source": {
         "id": 23793376,
         "title": "ep.82: Gommoso e Stantio",
@@ -1055,17 +1064,8 @@
       }
     },
     {
-      "word": "Antitaschi",
-      "def": "????",
-      "source": {
-        "id": 23793376,
-        "title": "ep.82: Gommoso e Stantio",
-        "link": "https://www.spreaker.com/user/10653829/ep-82-gommoso-e-stantio"
-      }
-    },
-    {
-      "word": "Smoderato",
-      "def": "Smodato",
+      "word": "Teatro",
+      "def": "Cinema dei professoroni",
       "source": {
         "id": 23538913,
         "title": "ep.81: Cos'è il Cinque?",
@@ -1082,8 +1082,8 @@
       }
     },
     {
-      "word": "Teatro",
-      "def": "Cinema dei professoroni",
+      "word": "Smoderato",
+      "def": "Smodato",
       "source": {
         "id": 23538913,
         "title": "ep.81: Cos'è il Cinque?",
@@ -1100,8 +1100,8 @@
       }
     },
     {
-      "word": "Nomenclare",
-      "def": "Non esiste questo verbo dannazione Nik",
+      "word": "ANSAMBZL",
+      "def": "Ensemble",
       "source": {
         "id": 23059501,
         "title": "ep.79: Io non mi faccio domande, mi do solo risposte.",
@@ -1109,8 +1109,8 @@
       }
     },
     {
-      "word": "ANSAMBZL",
-      "def": "Ensemble",
+      "word": "Nomenclare",
+      "def": "Non esiste questo verbo dannazione Nik",
       "source": {
         "id": 23059501,
         "title": "ep.79: Io non mi faccio domande, mi do solo risposte.",
@@ -1127,8 +1127,8 @@
       }
     },
     {
-      "word": "In medias res",
-      "def": "assolutamente non quello che vuol dire in medias res",
+      "word": "Cazzimma sufficiente",
+      "def": "cazzimma appropriatamente adeguata",
       "source": {
         "id": 22731245,
         "title": "ep.78: The Bizarre World of Picard",
@@ -1136,8 +1136,8 @@
       }
     },
     {
-      "word": "Cazzimma sufficiente",
-      "def": "cazzimma appropriatamente adeguata",
+      "word": "In medias res",
+      "def": "assolutamente non quello che vuol dire in medias res",
       "source": {
         "id": 22731245,
         "title": "ep.78: The Bizarre World of Picard",
@@ -1181,8 +1181,8 @@
       }
     },
     {
-      "word": "Mascherine particolari",
-      "def": "Mascherine molto speciali",
+      "word": "Scellerati",
+      "def": "Super Folli",
       "source": {
         "id": 21778860,
         "title": "ep.75: Space Klaus",
@@ -1199,6 +1199,15 @@
       }
     },
     {
+      "word": "Outtare",
+      "def": "Rivelare l’identità di una persona terza",
+      "source": {
+        "id": 21778860,
+        "title": "ep.75: Space Klaus",
+        "link": "https://www.spreaker.com/user/10653829/ep-75-space-klaus"
+      }
+    },
+    {
       "word": "Plutone",
       "def": "Nettuno",
       "source": {
@@ -1208,8 +1217,8 @@
       }
     },
     {
-      "word": "Scellerati",
-      "def": "Super Folli",
+      "word": "Mascherine particolari",
+      "def": "Mascherine molto speciali",
       "source": {
         "id": 21778860,
         "title": "ep.75: Space Klaus",
@@ -1217,12 +1226,12 @@
       }
     },
     {
-      "word": "Outtare",
-      "def": "Rivelare l’identità di una persona terza",
+      "word": "GUERRE STELLARI",
+      "def": "Star Wars",
       "source": {
-        "id": 21778860,
-        "title": "ep.75: Space Klaus",
-        "link": "https://www.spreaker.com/user/10653829/ep-75-space-klaus"
+        "id": 21539479,
+        "title": "ep.74: JoJo Pizza",
+        "link": "https://www.spreaker.com/user/10653829/ep-74-jojo-pizza"
       }
     },
     {
@@ -1244,15 +1253,6 @@
       }
     },
     {
-      "word": "GUERRE STELLARI",
-      "def": "Star Wars",
-      "source": {
-        "id": 21539479,
-        "title": "ep.74: JoJo Pizza",
-        "link": "https://www.spreaker.com/user/10653829/ep-74-jojo-pizza"
-      }
-    },
-    {
       "word": "ENDORSARE",
       "def": "Fare un endorsement,",
       "source": {
@@ -1262,8 +1262,8 @@
       }
     },
     {
-      "word": "Cazzimma Americana",
-      "def": "Una roba che guarda non te la spiego neanche fratm",
+      "word": "Carboigrizia",
+      "def": "Pigrizia da carboidrati",
       "source": {
         "id": 21078679,
         "title": "ep.73: Cybertruck Future 88",
@@ -1280,8 +1280,8 @@
       }
     },
     {
-      "word": "Carboigrizia",
-      "def": "Pigrizia da carboidrati",
+      "word": "Cazzimma Americana",
+      "def": "Una roba che guarda non te la spiego neanche fratm",
       "source": {
         "id": 21078679,
         "title": "ep.73: Cybertruck Future 88",
@@ -1307,8 +1307,8 @@
       }
     },
     {
-      "word": "Patent Pending",
-      "def": "Ne posseggo i diritti sul copyright",
+      "word": "Astanti",
+      "def": "Che stanno intorno",
       "source": {
         "id": 20329676,
         "title": "ep.69: The MandorLorro",
@@ -1316,8 +1316,8 @@
       }
     },
     {
-      "word": "Astanti",
-      "def": "Che stanno intorno",
+      "word": "Patent Pending",
+      "def": "Ne posseggo i diritti sul copyright",
       "source": {
         "id": 20329676,
         "title": "ep.69: The MandorLorro",
@@ -1343,15 +1343,6 @@
       }
     },
     {
-      "word": "\"3d 3d che non fa finta di non essere 3d\"",
-      "def": "3D tipo, metti, Shrek",
-      "source": {
-        "id": 19670986,
-        "title": "ep.65: la Redenzione della Fanfiction",
-        "link": "https://www.spreaker.com/user/10653829/ep-65-la-redenzione-della-fanfiction"
-      }
-    },
-    {
       "word": "Caìgo",
       "def": "nebbiolona",
       "source": {
@@ -1363,6 +1354,15 @@
     {
       "word": "BEEYOPIC",
       "def": "Biopic",
+      "source": {
+        "id": 19670986,
+        "title": "ep.65: la Redenzione della Fanfiction",
+        "link": "https://www.spreaker.com/user/10653829/ep-65-la-redenzione-della-fanfiction"
+      }
+    },
+    {
+      "word": "\"3d 3d che non fa finta di non essere 3d\"",
+      "def": "3D tipo, metti, Shrek",
       "source": {
         "id": 19670986,
         "title": "ep.65: la Redenzione della Fanfiction",
@@ -1442,6 +1442,15 @@
       }
     },
     {
+      "word": "Pettare",
+      "def": "Fare “pat pat” sulla testa di un gatto o cane o pollo [dall’inglese “to pet”]",
+      "source": {
+        "id": 19177638,
+        "title": "ep.60: Assassini Cereali",
+        "link": "https://www.spreaker.com/user/10653829/ep-60-assassini-cereali"
+      }
+    },
+    {
       "word": "Guilty piacere",
       "def": "Pleasure proibito",
       "source": {
@@ -1460,6 +1469,24 @@
       }
     },
     {
+      "word": "Ecsaited",
+      "def": "W o w [dall’inglese “W  O  W”]",
+      "source": {
+        "id": 19177638,
+        "title": "ep.60: Assassini Cereali",
+        "link": "https://www.spreaker.com/user/10653829/ep-60-assassini-cereali"
+      }
+    },
+    {
+      "word": "Catzin",
+      "def": "Cutscene",
+      "source": {
+        "id": 19177638,
+        "title": "ep.60: Assassini Cereali",
+        "link": "https://www.spreaker.com/user/10653829/ep-60-assassini-cereali"
+      }
+    },
+    {
       "word": "Stunnare",
       "def": "Stordire [dall’inglese “stun”]",
       "source": {
@@ -1471,33 +1498,6 @@
     {
       "word": "Detachd",
       "def": "Distaccato [dall’inglese “detached”]",
-      "source": {
-        "id": 19177638,
-        "title": "ep.60: Assassini Cereali",
-        "link": "https://www.spreaker.com/user/10653829/ep-60-assassini-cereali"
-      }
-    },
-    {
-      "word": "Ecsaited",
-      "def": "W o w [dall’inglese “W  O  W”]",
-      "source": {
-        "id": 19177638,
-        "title": "ep.60: Assassini Cereali",
-        "link": "https://www.spreaker.com/user/10653829/ep-60-assassini-cereali"
-      }
-    },
-    {
-      "word": "Pettare",
-      "def": "Fare “pat pat” sulla testa di un gatto o cane o pollo [dall’inglese “to pet”]",
-      "source": {
-        "id": 19177638,
-        "title": "ep.60: Assassini Cereali",
-        "link": "https://www.spreaker.com/user/10653829/ep-60-assassini-cereali"
-      }
-    },
-    {
-      "word": "Catzin",
-      "def": "Cutscene",
       "source": {
         "id": 19177638,
         "title": "ep.60: Assassini Cereali",
